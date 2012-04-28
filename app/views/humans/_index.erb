@@ -1,0 +1,11 @@
+/* PROJECT */
+
+Name: <%=h @project.name %>
+<% if @project.homepage? %>Homepage: <%=h @project.homepage %><% end %>
+<% if @project.description? %>Description: <%=h @project.description %><% end %>
+
+/* TEAM */
+
+<% if @users.any? %><% @users.keys.sort.each do |role| %><% @users[role].sort.each do |user| %><%=h role %>: <%=h user.name %>
+<% end %><% end %><% end %>
+

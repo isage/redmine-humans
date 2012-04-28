@@ -1,0 +1,18 @@
+= Redmine Humans plugin
+
+Humans plugin intended for automatic creation of humans.txt, see http://humanstxt.org/
+Plugin provides route /projects/:id/humans.txt with project description and list of members.
+Note, however, that it ignores project access settings and always available.
+
+
+== Getting the plugin
+
+The newest version is always at {GitHub}[http://github.com/isage/redmine-humans].
+
+== Install
+
+Follow the Redmine plugin installation steps at: http://www.redmine.org/wiki/redmine/Plugins Make sure the plugin is installed to <tt>vendor/plugins/redmine-humans</tt>
+
+== License
+
+http://sam.zoy.org/wtfpl/
